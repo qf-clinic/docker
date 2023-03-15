@@ -1,0 +1,113 @@
+    1  pwd
+    2  docker
+    3  apt  install docker.io  -y
+    4  apt update
+    5  apt  install docker.io  -y
+    6  systemctl status docker
+    7  which docker
+    8  docker --version
+    9  docker
+   10  clear
+   11  ls -lrt
+   12  docker images
+   13  docker ps
+   14  docker ps -a
+   15  docker 
+   16  docker ps -a
+   17  cleaqr
+   18  cler
+   19  clear
+   20  docker images
+   21  docker pull ubuntu
+   22  docker images
+   23  docker pull jenkins/jenkins:lts
+   24  docker images
+   25  docker run ubuntu ls
+   26  docker ps ls -lrt
+   27  docker run ubuntu ls -lrt
+   28  docker ps 
+   29  docker ps -a
+   30  docker 
+   31  docker run --help
+   32  docker run ubuntu bash
+   33  dcoker ps
+   34  docker ps 
+   35  docker run -it ubuntu bash
+   36  dcoker ps
+   37  docker ps
+   38  docker run -it maven mvn --version
+   39  history
+   40  docker images
+   41  docker run -itd -p 8080:8080 jenkins/jenkins:lts
+   42  docker ps
+   43  docker stop 84a848085422
+   44  docker start 84a848085422
+   45  docker ps
+   46  clear
+   47  ls -lrt
+   48  docker run it ubuntu ls
+   49  docker images
+   50  docker run -it ubuntu ls
+   51  docker ps 
+   52  docker ps -a
+   53  docker run -itd ubuntu
+   54  docker ps
+   55  docker run --help
+   56  pwd
+   57  docker ps 
+   58  docker
+   59  docker ps
+   60  docker rename dc18c043969d ex
+   61  docker ps
+   62  docker exec -it ex ls
+   63  docker exec -it ex pwd
+   64  docker exec -it ex ls -lrt
+   65  docker exec -it ex bash
+   66  docker exec -it ex mvn --version
+   67  history
+   68  docker 
+   69  docker exec -it ex mvn --version
+   70  docker exec -it ex bash
+   71  docker run -itd centos
+   72  docker ps
+   73  docker commit --help 
+   74  docker commit ex maven:1.0.0
+   75  docker im ages
+   76  docker images
+   77  docker run -it maven:1.0.0 mvn --version
+   78  docker images
+   79  docker
+   80  docker tag maven:1.0.0 devopsjuly22017/mavenv2:1.0.0
+   81  docker images
+   82  docker push devopsjuly22017/mavenv2:1.0.0
+   83  docker
+   84  docker login --help
+   85  docker login 
+   86  docker push devopsjuly22017/mavenv2:1.0.0
+   87  clear
+   88  history
+   89  cleaer
+   90  clear
+   91  aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 675467602881.dkr.ecr.ap-south-1.amazonaws.com
+   92  apt  install awscli
+   93  which aws
+   94  aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 675467602881.dkr.ecr.ap-south-1.amazonaws.com
+   95  aws configure
+   96  clear
+   97  cd
+   98  cd .aws
+   99  ls -lrt
+  100  cat credentials 
+  101  cat config 
+  102  clear
+  103  pwd
+  104  cd
+  105  aws ecr get-login-password --region ap-south-1
+  106  aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 675467602881.dkr.ecr.ap-south-1.amazonaws.com
+  107  docker images
+  108  docker tag maven:1.0.0 675467602881.dkr.ecr.ap-south-1.amazonaws.com/maven:latest
+  109  docker images
+  110  dcoker push 675467602881.dkr.ecr.ap-south-1.amazonaws.com/maven:latest
+  111  docker push 675467602881.dkr.ecr.ap-south-1.amazonaws.com/maven:latest
+  112  docker pull 675467602881.dkr.ecr.ap-south-1.amazonaws.com/maven:latest
+  113  history
