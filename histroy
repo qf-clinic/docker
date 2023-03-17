@@ -111,3 +111,132 @@
   111  docker push 675467602881.dkr.ecr.ap-south-1.amazonaws.com/maven:latest
   112  docker pull 675467602881.dkr.ecr.ap-south-1.amazonaws.com/maven:latest
   113  history
+  clear
+  115  docker pd
+  116  docker ps
+  117  dcoker stop 4fae5731e107
+  118  docker stop 4fae5731e107
+  119  dcoker stop 4fae5731e107
+  120  docker ps
+  121  docke stop ex
+  122  docker stop ex
+  123  docker ps
+  124  clear
+  125  dopcker ps -a
+  126  docker ps -a
+  127  docker ps -a -q
+  128  docker rm -vf $(docker ps -a -q)
+  129  docker rm --help
+  130  docker images
+  131  docker images -q
+  132  docker images -aq
+  133  docker images -q
+  134  docker rmi -f $(docker images -q)
+  135  history
+  136  docker run -itd --name=n1 nginx
+  137  docker ps 
+  138  docker exec -it n1 bash 
+  139  curl -i http://localhost:80/
+  140  docker inspect n1
+  141  curl http://172.17.0.2:80
+  142  pwd
+  143  docker stop n1
+  144  docker run -itd ubuntu
+  145  docker start n1
+  146  curl http://172.17.0.2:80
+  147  curl http://172.17.0.3:80
+  148  curl http://localhost:80
+  149  docker run -itd --name=n2 nginx
+  150  docker ps 
+  151  docker run -itd -p 80:80 --name=n3 nginx
+  152  docker ps 
+  153  curl http://localhost:80
+  154  docker run -itd -p 80:80 --name=n4 nginx
+  155  docker run -itd -p 81:80 --name=n5 nginx
+  156  docker ps
+  157  curl http://localhost:80
+  158  curl http://localhost:81
+  159  docker ps
+  160  history|grep jenkins
+  161  docker run -itd -p 8080:8080 jenkins/jenkins:lts
+  162  docker ps
+  163  docker network ls
+  164  clear
+  165  docker rm -vf $(docker ps -a -q)
+  166  docker ps -a
+  167  docker run -itd -p 8080:8080 jenkins/jenkins:lts
+  168  docker run -itd -p 8081:8080 jenkins/jenkins:lts
+  169  docker ps 
+  170  docker run -itd -p 8080:8080 jenkins/jenkins:lts
+  171  docker network ls
+  172  docker network inspect bridge
+  173  docker network ls
+  174  docker run -itd --network=host  jenkins/jenkins:lts
+  175  dcoker ps -a
+  176  docker ps -a
+  177  docker logs 4069eb80dcd3
+  178  docker rm -vf $(docker ps -a -q)
+  179  docker run -itd --network=host  jenkins/jenkins:lts
+  180  docker ps -a
+  181  docker run -itd --network=host  jenkins/jenkins:lts
+  182  docker ps -a
+  183  docker run --help
+  184  clkear
+  185  clar
+  186  clear
+  187  docker images
+  188  docker push nginx
+  189  docker login
+  190  docker push nginx
+  191  docker tag nginx devopsjuly22017/nginx:1.0.0
+  192  dcoker push devopsjuly22017/nginx:1.0.0
+  193  docker push devopsjuly22017/nginx:1.0.0
+  194  clear
+  195  history|grep jenkins
+  196  docker run -itd -p 8080:8080 jenkins/jenkins:lts
+  197  docker ps 
+  198  docker exec -it c854cce8d42c bash
+  199  docker ps 
+  200  docker stop c854cce8d42c
+  201  docker rm c854cce8d42c
+  202  docker run -itd -p 8080:8080 jenkins/jenkins:lts
+  203  docker volume ls
+  204  docker ps -a
+  205  docker rm -vf $(docker ps -a -q)
+  206  docker ps -a
+  207  docker volume ls
+  208  pwd
+  209  mkdir myvol
+  210  chmod 777 myvol/
+  211  cd myvol/
+  212  pwd
+  213  docker run -itd --name=v1 -v /root/myvol:/code ubuntu
+  214  ls -lrt
+  215  touch src
+  216  touch pom.xml
+  217  docker exec -it v1 bash
+  218  docker rm -f v1
+  219  ls -lrt
+  220  docker run -itd --name=v1 -v /root/myvol:/code ubuntu
+  221  docker exec -it v1 bash
+  222  cd ../
+  223  pwd
+  224  cd
+  225  mkdir jenkinshome
+  226  chmod 777 jenkinshom
+  227  chmod 777 jenkinshome
+  228  docker run -itd -p 8080:8080 -v /root/jenkinshome:/var/jenkins_home --user=jenkins --name=j1 jenkins/jenkins:lts
+  229  ls -lrt
+  230  docker ps 
+  231  cd jenkinshome/
+  232  pwd
+  233  ls -lrt
+  234  cd secrets/
+  235  cat initialAdminPassword 
+  236  docker
+  237  docker volume create myvol
+  238  docker volume ls
+  239  docker volume inspect myvol
+  240  cd
+  241  ls -lt
+  242  history
